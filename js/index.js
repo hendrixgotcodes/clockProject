@@ -1,34 +1,3 @@
-// function max(...numbers) {
-//   let x = -Infinity;
-
-//   for (let number of numbers) {
-//     if (number > x) {
-//       x = number;
-//     }
-//   }
-//   return x;
-// }
-
-//global object
-// const nolimithendrix = {
-//   //local variables
-//   instagram: "Instagram:   @nolimith3ndrix",
-//   twitter: "Twitter:     @nolimith3ndrix",
-
-//   //local function
-//   function() {
-//     console.log(this.instagram + "\n" + this.twitter);
-//   },
-// };
-
-// nolimithendrix.function();
-
-//Printing out "hoist before declaration"
-// console.log(hoist);
-
-// //variable hoist declared and assigned a value
-// var hoist = "I am a variable";
-
 function hendrix(String) {
   let count = 0;
   for (let i = 0; i < String.length(); i++) {
