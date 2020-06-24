@@ -9,6 +9,13 @@ function zeroPad(time) {
   if (time < 10) {
     time = "0" + time;
   }
+
+  return time;
+}
+function amPm(time) {
+  if (time > 12) {
+    time = time - 12;
+  }
   return time;
 }
 
@@ -17,7 +24,7 @@ function clock() {
   let date = new Date();
 
   //The "getHours()"" function by default returns 24hr format. This line strikes it down to 12
-  hour.textContent = zeroPad(date.getHours() - 12);
+  hour.textContent = zeroPad(amPm(date.getHours()));
   min.textContent = zeroPad(date.getMinutes());
   sec.textContent = zeroPad(date.getSeconds());
 
