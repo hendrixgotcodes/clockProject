@@ -16,6 +16,9 @@ function amPm(time) {
   if (time > 12) {
     time = time - 12;
   }
+  else if(time === 0){
+    time = 12;
+  }
   return time;
 }
 
@@ -33,6 +36,7 @@ function clock() {
   } else {
     tod.textContent = "AM";
   }
+  console.log(date.getHours());
 }
 
 // Executes the clock function every 1second
